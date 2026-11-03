@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudDB | Database Dashboard</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="app-layout">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">C</div>
+                <div>
+                    <h2>CloudDB</h2>
+                    <span>PROJECT 04</span>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <p class="nav-heading">WORKSPACE</p>
+                <a href="/" class="nav-link active">▦ Dashboard</a>
+                <a href="#database" class="nav-link">◈ Database</a>
+                <a href="#records" class="nav-link">▤ Records</a>
+                <a href="#monitoring" class="nav-link">◉ Monitoring</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="cloud-status">
+                    <span class="status-dot"></span>
+                    <div>
+                        <strong>AWS Environment</strong>
+                        <small>US East · N. Virginia</small>
+                    </div>
+                </div>
+                <p>CloudDB Dashboard v1.0</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <p class="breadcrumb">Workspace / Overview</p>
+                    <h1>Database Dashboard</h1>
+                </div>
+
+                <div class="topbar-right">
+                    <span class="environment-badge">● Development</span>
+                    <div class="profile">P4</div>
+                </div>
+            </header>
+
+            <section class="welcome-section">
+                <div>
+                    <p class="eyebrow">CLOUD INFRASTRUCTURE</p>
+                    <h2>Welcome to your dashboard</h2>
+                    <p>Monitor your Flask application and PostgreSQL database.</p>
+                </div>
+                <div class="welcome-icon">☁</div>
+            </section>
+
+            <section class="stats-grid">
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Database Engine</span>
+                        <span class="stat-icon purple">▤</span>
+                    </div>
+                    <h3>PostgreSQL</h3>
+                    <p>Amazon RDS</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Application</span>
+                        <span class="stat-icon blue">⌘</span>
+                    </div>
+                    <h3>Flask</h3>
+                    <p>Python backend</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Database Port</span>
+                        <span class="stat-icon orange">⇄</span>
+                    </div>
+                    <h3>5432</h3>
+                    <p>PostgreSQL connection</p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Cloud Provider</span>
+                        <span class="stat-icon green">☁</span>
+                    </div>
+                    <h3>AWS</h3>
+                    <p>Cloud infrastructure</p>
+                </article>
+
+            </section>
+
+            <section class="content-grid">
+
+                <article class="panel database-panel" id="database">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">CONNECTIVITY</p>
+                            <h3>Database Connection</h3>
+                        </div>
+                        <span class="live-badge">LIVE STATUS</span>
+                    </div>
+
+                    <div class="connection-info">
+                        <div class="database-symbol">DB</div>
+                        <div>
+                            <h4>Project4 PostgreSQL</h4>
+                            <p>Amazon Relational Database Service</p>
+                        </div>
+                    </div>
+
+                    <div class="connection-status">
+                        <span class="status-dot"></span>
+                        <span>Connection status will appear here</span>
+                    </div>
+
+                    <a href="/db-test" class="primary-button">
+                        Test Database Connection →
+                    </a>
+                </article>
+
+                <article class="panel system-panel" id="monitoring">
+                    <div class="panel-heading">
+                        <div>
+                            <p class="eyebrow">APPLICATION</p>
+                            <h3>System Information</h3>
+                        </div>
+                        <span class="system-icon">⌘</span>
+                    </div>
+
+                    <div class="system-row">
+                        <span>Backend Framework</span>
+                        <strong>Flask</strong>
+                    </div>
+                    <div class="system-row">
+                        <span>Programming Language</span>
+                        <strong>Python</strong>
+                    </div>
+                    <div class="system-row">
+                        <span>Database</span>
+                        <strong>PostgreSQL</strong>
+                    </div>
+                    <div class="system-row">
+                        <span>Hosting Platform</span>
+                        <strong>Amazon EC2</strong>
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="panel records-panel" id="records">
+                <div class="panel-heading">
+                    <div>
+                        <p class="eyebrow">DATA MANAGEMENT</p>
+                        <h3>Database Records</h3>
+                    </div>
+                    <span class="records-label">PostgreSQL</span>
+                </div>
+
+                <div class="empty-state">
+                    <div class="empty-icon">▤</div>
+                    <h4>Ready for database records</h4>
+                    <p>
+                        Your database records will appear here once
+                        the application is connected to PostgreSQL.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <span>© 2026 CloudDB Dashboard</span>
+                <span>Built with Flask · AWS EC2 · Amazon RDS</span>
+            </footer>
+
+        </main>
+    </div>
+
+</body>
+</html>
