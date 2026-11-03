@@ -140,17 +140,6 @@ pip install -r requirements.txt
 
 Create a `.env` file using `.env.example` as a reference.
 
-Add your own database configuration:
-
-```text
-DB_HOST=your-rds-endpoint
-DB_NAME=projectdb
-DB_USER=your_username
-DB_PASSWORD=your_password
-```
-
-Do not upload your actual `.env` file or database credentials to GitHub.
-
 ### 5. Run the Application
 
 ```bash
@@ -188,6 +177,4 @@ During this project, I gained hands-on experience with:
 - Improve application security and monitoring.
 - Explore automated deployment using CI/CD.
 
-## Disclaimer
 
-This project was created for educational purposes as part of my AWS Cloud Engineering learning journey. It is a beginner-level hands-on project and is not intended for production use.
