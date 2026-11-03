@@ -70,3 +70,16 @@ project4/
 │   └── index.html
 └── static/
     └── style.css
+## Project Screenshots
+
+### 1. VPC and Subnets
+![VPC and Subnets](vpc-subnets.png)
+
+### 2. Flask Application
+![Flask Application](flask-app.png)
+
+### 3. RDS Database Connection
+![RDS Connection](rds-connection.png)
+
+### 4. CloudWatch Monitoring Dashboard
+![CloudWatch Dashboard](cloudwatch-dashboard.png)
