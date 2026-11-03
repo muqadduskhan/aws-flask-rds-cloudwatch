@@ -58,6 +58,7 @@ Configured two CloudWatch alarms:
 - `.env` excluded from Git using `.gitignore`
 - `.env.example` provided with placeholder values
 
+)
 ## Project Structure
 
 ```text
@@ -70,16 +71,21 @@ project4/
 │   └── index.html
 └── static/
     └── style.css
+```
+
 ## Project Screenshots
 
 ### 1. VPC and Subnets
-![VPC and Subnets](vpc-subnets.png)
+![VPC and Subnets](screenshots/vpc-subnets.png)
 
 ### 2. Flask Application
-![Flask Application](flask-app.png)
+![Flask Application](screenshots/flask-app.png)
 
 ### 3. RDS Database Connection
-![RDS Connection](rds-connection.png)
+![RDS Connection](screenshots/rds-connection.png)
+
+### 4. CloudWatch Monitoring Dashboard
+![CloudWatch Dashboard](screenshots/cloudwatch-dashboard.png)
 
 ### 4. CloudWatch Monitoring Dashboard
 ![CloudWatch Dashboard](cloudwatch-dashboard.png)
